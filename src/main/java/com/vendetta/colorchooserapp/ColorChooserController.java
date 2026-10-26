@@ -39,4 +39,25 @@ public class ColorChooserController {
     @FXML
     private TextField redTextField;
     
+    public void initialize() {
+        alphaTextField.textProperty().bind(alphaSlider.valueProperty().asString("%.0f"));
+        blueTextField.textProperty().bind(blueSlider.valueProperty().asString("%.0f"));
+        greenTextField.textProperty().bind(greenSlider.valueProperty().asString("%.0f"));
+        redTextField.textProperty().bind(redSlider.valueProperty().asString("%.0f"));
+    
+        alphaSlider.valueProperty().addListener((obs, oldValue, newValue) ->{
+            alphaTextField.setText(String.valueOf(newValue));
+        });
+        blueSlider.valueProperty().addListener((obs, oldValue, newValue) ->{
+            blueTextField.setText(String.valueOf(newValue));
+        });
+        greenSlider.valueProperty().addListener((obs, oldValue, newValue) ->{
+            greenTextField.setText(String.valueOf(newValue));
+        });
+        redSlider.valueProperty().addListener((obs, oldValue, newValue) ->{
+            redTextField.setText(String.valueOf(newValue));
+        });
+    }
+    
+    
 }
