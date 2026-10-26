@@ -12,7 +12,7 @@
 
 <GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="495.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26">
   <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.8347761405844" minWidth="1.0" prefWidth="47.93042204512541" />
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="88.8347761405844" minWidth="1.0" prefWidth="47.93042204512541" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.2521901395687" minWidth="10.0" prefWidth="212.03479248508413" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.3739109758979" minWidth="1.0" prefWidth="40.3739109758979" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
@@ -51,19 +51,19 @@
       <Slider fx:id="greenSlider" max="255.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Slider fx:id="blueSlider" max="255.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Slider fx:id="alphaSlider" max="1.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <TextField fx:id="redTextField" GridPane.columnIndex="2" />
-      <TextField fx:id="greenTextField" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <TextField fx:id="blueTextField" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <TextField fx:id="alphaTextField" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Circle fill="DODGERBLUE" radius="50.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets bottom="25.0" left="15.0" right="4.0" />
-         </GridPane.margin>
-      </Circle>
-      <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <TextField fx:id="redTextField" prefWidth="50.0" GridPane.columnIndex="2" />
+      <TextField fx:id="greenTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="blueTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="alphaTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
          <GridPane.margin>
             <Insets bottom="25.0" left="15.0" right="4.0" />
          </GridPane.margin>
       </Rectangle>
+      <Circle fill="DODGERBLUE" radius="40.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+         <GridPane.margin>
+            <Insets bottom="25.0" left="25.0" right="4.0" />
+         </GridPane.margin>
+      </Circle>
    </children>
 </GridPane>
